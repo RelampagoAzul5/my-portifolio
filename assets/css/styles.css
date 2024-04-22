@@ -1,13 +1,13 @@
-:root{
+:root {
   --primary-color: #2cceff;
   --primary-grey-color: #dbdbdb;
 
   --github-color: rgba(0, 0, 0, 0.8);
   --github-low-opacity-color: rgba(0, 0, 0, 0.4);
-  
+
   --instagram-color: rgba(255, 2, 132, 0.8);
   --instagram-low-opacity-color: rgba(255, 2, 132, 0.4);
-  
+
   --linkedin-color: rgba(0, 130, 251, 0.8);
   --linkedin-low-opacity-color: rgba(0, 130, 251, 0.4);
 }
@@ -18,82 +18,99 @@
   padding: 0;
   box-sizing: border-box;
 }
-html{
+
+html {
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
-body{
+
+body {
   background-color: var(--primary-grey-color);
   font-family: 'Roboto Slab', sans-serif;
 }
-header{
+
+header {
   font-size: 2rem;
 }
-footer{
+
+footer {
   margin-top: 1rem;
   font-size: 2rem;
 }
-#copyright a{
+
+main {
+  margin-left: 40rem;
+}
+
+#copyright a {
   text-decoration: none;
   color: var(--primary-color);
 }
 
 
-.bg-grey{
+.bg-grey {
   background-color: var(--primary-grey-color);
 }
 
-#menu-img{
-display: flex;
-justify-content: center;
+.bg-primary-color {
+  background-color: var(--primary-color);
+}
+
+#menu-img {
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 
-#menu-img a p,#menu-img a{
+#menu-img a p,
+#menu-img a {
   text-decoration: none;
   font-size: 2rem;
   margin-left: 1rem;
 }
 
-main h1.name-principal{
+main h1 {
   display: flex;
   justify-content: center;
   font-size: 5rem;
   padding-bottom: 1rem;
 }
 
-section.main-screen{
+section.main-screen {
   display: flex;
 }
-section.main-screen section.about-me{
+
+section.main-screen section.about-me {
   background-color: var(--primary-color);
   border-radius: 2rem;
   padding: 0 5rem;
 }
 
-section.main-screen img{
+section.main-screen img {
   object-fit: cover;
   object-position: top;
   height: 99vh;
   border-radius: 2rem;
 }
-section.main-screen h2{
+
+section.main-screen h2 {
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 5rem;
 }
 
-section.main-screen ul{
+section.main-screen ul {
   font-weight: bold;
   font-size: 2rem;
   border-color: var(--primary-color) !important;
 }
-section.main-screen ul div{
+
+section.main-screen ul div {
   font-weight: 400;
 }
 
-section.main-screen ul li{
+section.main-screen ul li {
   border-color: var(--primary-color) !important;
   border-width: 10rem;
   display: grid;
@@ -130,20 +147,22 @@ section.main-screen ul li{
 }
 
 
-.social-medias{
+.social-medias {
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
 
 
-.instagram-link{
+.instagram-link {
   background-color: var(--instagram-color);
 }
-.likedin-link{
+
+.likedin-link {
   background-color: var(--linkedin-color);
 }
-#instagram :hover{
+
+#instagram :hover {
   background-color: var(--instagram-low-opacity-color);
   border-radius: 1rem;
 }
@@ -152,7 +171,29 @@ section.main-screen ul li{
   background-color: var(--github-low-opacity-color);
   border-radius: 4rem;
 }
+
 #linkedin:hover {
   background-color: var(--linkedin-low-opacity-color);
   border-radius: 4rem;
+}
+
+main section#contact-informations {
+  margin-top: 2rem;
+  margin-right: 12rem;
+  padding: 4rem;
+  border-radius: 2rem;
+}
+
+
+
+main section#contact-informations h2 {
+  padding: 3rem;
+  font-size: 3rem;
+  margin-top: 4rem;
+}
+
+main section#contact-informations p {
+  padding: rem;
+  margin-top: 5rem;
+  font-size: 3rem;
 }
