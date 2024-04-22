@@ -1,7 +1,15 @@
 :root{
   --primary-color: #2cceff;
-  
   --primary-grey-color: #dbdbdb;
+
+  --github-color: rgba(0, 0, 0, 0.8);
+  --github-low-opacity-color: rgba(0, 0, 0, 0.4);
+  
+  --instagram-color: rgba(255, 2, 132, 0.8);
+  --instagram-low-opacity-color: rgba(255, 2, 132, 0.4);
+  
+  --linkedin-color: rgba(0, 130, 251, 0.8);
+  --linkedin-low-opacity-color: rgba(0, 130, 251, 0.4);
 }
 
 
@@ -21,6 +29,15 @@ body{
 header{
   font-size: 2rem;
 }
+footer{
+  margin-top: 1rem;
+  font-size: 2rem;
+}
+#copyright a{
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
 
 .bg-grey{
   background-color: var(--primary-grey-color);
@@ -105,7 +122,7 @@ section.main-screen ul li{
   bottom: -50px;
   left: 50%;
   transform: translateX(-50%);
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: var(--github-color);
   color: #fff;
   padding: 5px 10px;
   border-radius: 5px;
@@ -121,21 +138,21 @@ section.main-screen ul li{
 
 
 .instagram-link{
-  background-color: rgba(255, 2, 132, 0.8);
+  background-color: var(--instagram-color);
 }
 .likedin-link{
-  background-color: rgba(0, 130, 251, 0.8);
+  background-color: var(--linkedin-color);
 }
 #instagram :hover{
-  background-color: rgba(255, 2, 132, 0.4);
+  background-color: var(--instagram-low-opacity-color);
   border-radius: 1rem;
 }
 
 #github:hover {
-  background-color: rgba(92, 92, 92, 0.4);
+  background-color: var(--github-low-opacity-color);
   border-radius: 4rem;
 }
 #linkedin:hover {
-  background-color: rgba(0, 130, 251, 0.4);
+  background-color: var(--linkedin-low-opacity-color);
   border-radius: 4rem;
 }
