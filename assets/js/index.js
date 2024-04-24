@@ -7,7 +7,7 @@ function removeActiveItem() {
     if (selectedItem) {
         selectedItem.classList.remove('active');
     }
-}
+};
 menuItems.forEach(item => {
     item.addEventListener('mouseenter', () => {
         removeActiveItem();
@@ -35,15 +35,15 @@ links.forEach((link, index) => {
 
 // CopyrightScript
 
-const year = new Date().getFullYear()
-const footer = document.querySelector('footer')
+const year = new Date().getFullYear();
+const footer = document.querySelector('footer');
 function createP(){
-    return document.createElement('p')
-}
+    return document.createElement('p');
+};
 function createCopyrightText(){
-    const p = createP()
-    p.classList.add('text-center')
-    p.innerHTML = `Copyright &copy; ${year}. Todos os direitos reservados.`
-    footer.appendChild(p)
-}
-createCopyrightText()
+    const p = createP();
+    p.classList.add('text-center');
+    p.innerHTML = `Copyright &copy; ${year}. Todos os direitos reservados.`;
+    footer.appendChild(p);
+};
+createCopyrightText();
