@@ -1,6 +1,9 @@
 :root {
-  --primary-color: #2cceff;
+  --primary-color: #8d49fc;
+  --primary-darkest-color: #6200ff;
   --primary-grey-color: #dbdbdb;
+  --primary-darkest-grey-color: #8a8a8a;
+  
 
   --github-color: rgba(0, 0, 0, 0.8);
   --github-low-opacity-color: rgba(0, 0, 0, 0.4);
@@ -11,7 +14,6 @@
   --linkedin-color: rgba(0, 130, 251, 0.8);
   --linkedin-low-opacity-color: rgba(0, 130, 251, 0.4);
 }
-
 
 * {
   margin: 0;
@@ -25,7 +27,7 @@ html {
 }
 
 body {
-  background-color: var(--primary-grey-color);
+  background-color: var(--primary-darkest-grey-color);
   font-family: 'Roboto Slab', sans-serif;
 }
 
@@ -47,6 +49,10 @@ main {
   color: var(--primary-color);
 }
 
+#copyright p {
+  text-decoration: none;
+  color: white;
+}
 
 .bg-grey {
   background-color: var(--primary-grey-color);
@@ -54,6 +60,10 @@ main {
 
 .bg-primary-color {
   background-color: var(--primary-color);
+}
+
+.bg-menu{
+  background-color: #000000;
 }
 
 #menu-img {
@@ -117,9 +127,6 @@ section.main-screen ul li {
   padding: 2rem
 }
 
-
-
-
 .link-container {
   display: flex;
   align-items: center;
@@ -131,7 +138,6 @@ section.main-screen ul li {
   align-items: center;
   margin: 0 10px;
   position: relative;
-
 }
 
 .link-name {
@@ -146,13 +152,11 @@ section.main-screen ul li {
   display: none;
 }
 
-
 .social-medias {
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
-
 
 .instagram-link {
   background-color: var(--instagram-color);
@@ -177,14 +181,30 @@ section.main-screen ul li {
   border-radius: 4rem;
 }
 
+#social-medias{
+  background-color: var(--primary-darkest-color);
+  width: 100%;
+  border-radius: 5rem;
+}
+
+.social-name{
+  font-size: 1.5rem !important;
+}
+
+#menu-name{
+  cursor: default;
+}
+
+.active{
+  background-color: var(--primary-darkest-color) !important;
+}
+
 main section#contact-informations {
   margin-top: 2rem;
   margin-right: 12rem;
   padding: 4rem;
   border-radius: 2rem;
 }
-
-
 
 main section#contact-informations h2 {
   padding: 3rem;
@@ -193,7 +213,10 @@ main section#contact-informations h2 {
 }
 
 main section#contact-informations p {
-  padding: rem;
   margin-top: 5rem;
   font-size: 3rem;
+}
+
+hr{
+  color: white;
 }
