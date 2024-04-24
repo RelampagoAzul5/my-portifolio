@@ -32,3 +32,19 @@ links.forEach((link, index) => {
         linkNames[index].style.display = 'none';
     });
 });
+
+// CopyrightScript
+
+const year = new Date().getFullYear()
+const footer = document.querySelector('footer')
+function createP(){
+    return document.createElement('p')
+}
+console.log(year)
+function createCopyrightText(){
+    const p = createP()
+    p.classList.add('text-center')
+    p.innerHTML = `Copyright &copy; ${year}. Todos os direitos reservados.`
+    footer.appendChild(p)
+}
+createCopyrightText()
