@@ -1,5 +1,5 @@
-
 // Menu Script
+
 const menuItems = document.querySelectorAll('.nav-link');
 
 function removeActiveItem() {
@@ -40,7 +40,6 @@ const footer = document.querySelector('footer')
 function createP(){
     return document.createElement('p')
 }
-console.log(year)
 function createCopyrightText(){
     const p = createP()
     p.classList.add('text-center')
