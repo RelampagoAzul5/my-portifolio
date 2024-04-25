@@ -1,8 +1,9 @@
 :root {
-  --primary-color: #8d49fc;
-  --primary-darkest-color: rgb(98, 0, 255,0.8);
-  --primary-grey-color: #dbdbdb;
-  --primary-darkest-grey-color: #8a8a8a;
+  --primary-color: black;
+  --secondary-color: rgb(98, 0, 255);
+  --secondary-low-opacity-color: rgb(98, 0, 255,0.8);
+  --white-color:white;
+  --grey-color: #dbdbdb;
 
   --blue-color: #0084ff; 
   --darkest-blue-color: #0084ff8d; 
@@ -30,7 +31,7 @@ html {
 }
 
 body {
-  background-color: var(--primary-darkest-grey-color);
+  background-color: var(--secondary-low-opacity-color);
   font-family: 'Roboto Slab', sans-serif;
 }
 
@@ -41,6 +42,7 @@ header {
 footer {
   margin-top: 1rem;
   font-size: 2rem;
+  color: var(--white-color);
 }
 
 main {
@@ -49,7 +51,7 @@ main {
 
 #copyright a {
   text-decoration: none;
-  color: var(--primary-color);
+  color: var(--secondary-low-opacity-color);
 }
 
 #copyright p {
@@ -58,7 +60,7 @@ main {
 }
 
 .bg-grey {
-  background-color: var(--primary-grey-color);
+  background-color: var(--grey-color);
 }
 
 .bg-primary-color {
@@ -87,6 +89,7 @@ main h1 {
   justify-content: center;
   font-size: 5rem;
   padding-bottom: 1rem;
+  color: var(--white-color);
 }
 
 section.main-screen {
@@ -111,6 +114,7 @@ section.main-screen h2 {
   align-items: center;
   justify-content: center;
   font-size: 5rem;
+  color: var(--white-color);
 }
 
 section.main-screen ul {
@@ -185,7 +189,7 @@ section.main-screen ul li {
 }
 
 #social-medias{
-  background-color: var(--primary-darkest-color);
+  background-color: var(--secondary-low-opacity-color);
   width: 100%;
   border-radius: 5rem;
 }
@@ -199,7 +203,7 @@ section.main-screen ul li {
 }
 
 .active{
-  background-color: var(--primary-darkest-color) !important;
+  background-color: var(--secondary-low-opacity-color) !important;
 }
 
 main section#contact-informations {
@@ -209,12 +213,12 @@ main section#contact-informations {
   border-radius: 2rem;
   display: flex;
   justify-content: space-around;
+  color: var(--white-color);
 }
 
 main section#contact-informations h2 {
   padding: 3rem;
   font-size: 3rem;
-
 }
 
 main section#contact-informations p {
@@ -232,8 +236,7 @@ hr{
   flex-direction: column;
   text-align: center;
   justify-content: space-around;
-  background-color: #000000;
-  color: white;
+  background-color: var(--secondary-color);
   margin: 2rem;
   border-radius: 8rem;
 }
@@ -282,7 +285,7 @@ section#portifolio{
 }
 
 .manual-btn{
-  border: 2px solid var(--primary-darkest-color);
+  border: 2px solid var(--secondary-low-opacity-color);
   padding: 5px;
   border-radius: 10px;
   cursor: pointer;
