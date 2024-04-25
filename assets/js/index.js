@@ -82,7 +82,7 @@ function nextLink(){
     const projectButton = document.getElementById('project-button');
     const codeButton = document.getElementById('code-button');
     const carouselButtons = document.querySelector('.carousel-buttons');
-    const projectLinks = ['https://relampagoazul5.github.io/prank-button-no/','https://landing-page-curso-python.netlify.app', 'https://relampagoazul5.github.io/x-men/'];
+    const projectLinks = ['https://prank-button-no.netlify.app','https://landing-page-curso-python.netlify.app', 'https://relampagoazul-x-men.netlify.app'];
 
     const codeLinks = ['https://github.com/RelampagoAzul5/prank-button-no','https://github.com/RelampagoAzul5/LandingPage','https://github.com/RelampagoAzul5/x-men'];
     let currentSlide = checkButtonChecked();
