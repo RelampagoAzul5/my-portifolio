@@ -3,6 +3,9 @@
   --primary-darkest-color: #6200ff;
   --primary-grey-color: #dbdbdb;
   --primary-darkest-grey-color: #8a8a8a;
+
+  --blue-color: #0084ff; 
+  --darkest-blue-color: #0084ff8d; 
   
 
   --github-color: rgba(0, 0, 0, 0.8);
@@ -233,4 +236,129 @@ hr{
   color: white;
   margin: 2rem;
   border-radius: 8rem;
+}
+section#portifolio{
+  background-color: var(--primary-color);
+  border-radius: 3rem;
+  margin-top: 2rem;
+  margin-right: 12rem;
+  display: flex;
+  flex-direction: column;
+  padding: 8rem 0;
+}
+
+.slider{
+  margin: 0 auto;
+  width: 800px;
+  height: 400px;
+  overflow: hidden;
+}
+
+.slides{
+  width: 400%;
+  height: 400px;
+  display: flex;
+}
+
+.slides input {
+  display: none;
+}
+
+.slide{
+  width: 25%;
+  position: relative;
+  transition: 2s;
+}
+.slide img{
+  width: 800px;
+}
+
+.manual-navigation{
+  position: absolute;
+  width: 800px;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn{
+  border: 2px solid var(--primary-darkest-color);
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.manual-btn:not(:last-child){
+  margin-right: 40px;
+}
+
+.manual-btn:hover{
+  background-color: var(--primary-color);
+}
+
+#radio1:checked ~ .first{
+  margin-left: 0;
+}
+#radio2:checked ~ .first{
+  margin-left: -25%;
+}
+#radio3:checked ~ .first{
+  margin-left: -50%;
+}
+
+
+.navigation-auto div{
+  border: 2px solid #20a6ff;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.navigation-auto{
+  position: absolute;
+  width: 800px;
+  margin-top: 360px;
+  display: flex;
+  justify-content: center;
+}
+
+
+.navigation-auto div:not(:last-child){
+  margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+  background-color: var(--primary-color);
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+  background-color: var(--primary-color);
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+  background-color: var(--primary-color);
+}
+
+.carousel-buttons{
+  display: flex;
+  flex-direction: column;
+  width: 4rem;
+  align-items: center;
+  justify-content: center;
+  margin-left: 13.5rem;
+  margin-top: 4rem;
+  position: absolute;
+}
+
+.carousel-buttons a{
+  background-color: var(--blue-color);
+  color: white;
+  text-decoration: none;
+  padding: 2rem 4rem;
+  border-radius: 1rem;
+  margin-top: 6rem;
+  font-size: 3rem;
+}
+
+.carousel-buttons a:hover{
+  background-color: var(--darkest-blue-color);
 }
