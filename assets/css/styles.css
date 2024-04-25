@@ -6,13 +6,13 @@
   
 
   --github-color: rgba(0, 0, 0, 0.8);
-  --github-low-opacity-color: rgba(0, 0, 0, 0.4);
+  --github-low-opacity-color: rgba(0, 0, 0, 0.2);
 
   --instagram-color: rgba(255, 2, 132, 0.8);
-  --instagram-low-opacity-color: rgba(255, 2, 132, 0.4);
+  --instagram-low-opacity-color: rgba(255, 2, 132, 0.2);
 
   --linkedin-color: rgba(0, 130, 251, 0.8);
-  --linkedin-low-opacity-color: rgba(0, 130, 251, 0.4);
+  --linkedin-low-opacity-color: rgba(0, 130, 251, 0.2);
 }
 
 * {
@@ -204,19 +204,33 @@ main section#contact-informations {
   margin-right: 12rem;
   padding: 4rem;
   border-radius: 2rem;
+  display: flex;
+  justify-content: space-around;
 }
 
 main section#contact-informations h2 {
   padding: 3rem;
   font-size: 3rem;
-  margin-top: 4rem;
+
 }
 
 main section#contact-informations p {
-  margin-top: 5rem;
+  margin-top: 2.6rem;
   font-size: 3rem;
 }
 
 hr{
   color: white;
+}
+
+.info{
+  width: 50rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-around;
+  background-color: #000000;
+  color: white;
+  margin: 2rem;
+  border-radius: 8rem;
 }
