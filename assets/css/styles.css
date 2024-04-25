@@ -1,6 +1,6 @@
 :root {
   --primary-color: #8d49fc;
-  --primary-darkest-color: #6200ff;
+  --primary-darkest-color: rgb(98, 0, 255,0.8);
   --primary-grey-color: #dbdbdb;
   --primary-darkest-grey-color: #8a8a8a;
 
