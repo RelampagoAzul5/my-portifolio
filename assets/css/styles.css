@@ -40,13 +40,20 @@ header {
 }
 
 footer {
+  /* display: flex;
+  justify-content: center; */
   margin-top: 1rem;
   font-size: 2rem;
+  margin-left: 88rem;
   color: var(--white-color);
 }
 
 main {
-  margin-left: 40rem;
+  margin-left: 35rem;
+  padding: 2rem;
+}
+section.main-section{
+  width: 145rem;
 }
 
 #copyright a {
@@ -94,6 +101,7 @@ main h1 {
 
 section.main-screen {
   display: flex;
+  justify-content: space-around;
 }
 
 section.main-screen section.about-me {
@@ -105,7 +113,7 @@ section.main-screen section.about-me {
 section.main-screen img {
   object-fit: cover;
   object-position: top;
-  height: 99vh;
+  height: 90vh;
   border-radius: 2rem;
 }
 
@@ -207,6 +215,7 @@ section.main-screen ul li {
 }
 
 main section#contact-informations {
+  margin-left: 0.1rem;
   margin-top: 2rem;
   margin-right: 12rem;
   padding: 4rem;
@@ -252,14 +261,14 @@ section#portifolio{
 
 .slider{
   margin: 0 auto;
-  width: 800px;
-  height: 400px;
+  width: 80rem;
+  height: 40rem;
   overflow: hidden;
 }
 
 .slides{
   width: 400%;
-  height: 400px;
+  height: 40rem;
   display: flex;
 }
 
@@ -273,13 +282,13 @@ section#portifolio{
   transition: 2s;
 }
 .slide img{
-  width: 800px;
+  width: 80rem;
 }
 
 .manual-navigation{
   position: absolute;
-  width: 800px;
-  margin-top: -40px;
+  width: 80rem;
+  margin-top: -4rem;
   display: flex;
   justify-content: center;
 }
@@ -296,7 +305,7 @@ section#portifolio{
 }
 
 .manual-btn:hover{
-  background-color: var(--primary-color);
+  background-color: var(--secondary-low-opacity-color);
 }
 
 #radio1:checked ~ .first{
@@ -312,16 +321,16 @@ section#portifolio{
 
 .navigation-auto div{
   border: 2px solid #20a6ff;
-  padding: 5px;
-  border-radius: 10px;
+  padding: 0.5rem;
+  border-radius: 1rem;
   cursor: pointer;
   transition: 1s;
 }
 
 .navigation-auto{
   position: absolute;
-  width: 800px;
-  margin-top: 360px;
+  width: 80rem;
+  margin-top: 36rem;
   display: flex;
   justify-content: center;
 }
@@ -332,13 +341,13 @@ section#portifolio{
 }
 
 #radio1:checked ~ .navigation-auto .auto-btn1{
-  background-color: var(--primary-color);
+  background-color: var(--secondary-low-opacity-color);
 }
 #radio2:checked ~ .navigation-auto .auto-btn2{
-  background-color: var(--primary-color);
+  background-color: var(--secondary-low-opacity-color);
 }
 #radio3:checked ~ .navigation-auto .auto-btn3{
-  background-color: var(--primary-color);
+  background-color: var(--secondary-low-opacity-color);
 }
 
 .carousel-buttons{
@@ -364,4 +373,8 @@ section#portifolio{
 
 .carousel-buttons a:hover{
   background-color: var(--darkest-blue-color);
+}
+
+#toggle-menu{
+  display: none;
 }

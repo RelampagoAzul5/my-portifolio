@@ -14,6 +14,37 @@ menuItems.forEach(item => {
         item.classList.add('active');
     });
 });
+// Menu button Script
+
+const menu = document.querySelector('#menu')
+const toggleMenuButton = document.querySelector('#toggle-menu-button');
+
+function putContentInMenuButton(){
+    if (document.documentElement.clientWidth > 1200){
+        toggleMenuButton.innerHTML = '';
+        menu.style.display = 'block'
+        return;
+    };
+    toggleMenuButton.innerHTML = '≡';
+    menu.style.display = 'none'
+}
+putContentInMenuButton()
+window.addEventListener('resize', () =>{
+    putContentInMenuButton();
+})
+function toggleMenu(){
+    if (document.documentElement.clientWidth <= 1200){
+        if(menu.style.display === 'none'){
+            toggleMenuButton.innerHTML = 'x';
+            menu.style.display = ''
+            toggleMenuButton.style.left = '35rem'
+            return
+        }
+        menu.style.display = 'none'
+        toggleMenuButton.style.left = '0rem'
+        toggleMenuButton.innerHTML = '≡';
+    }
+}
 
 
 // Link Script
@@ -42,11 +73,12 @@ function createP(){
 };
 function createCopyrightText(){
     const p = createP();
-    p.classList.add('text-center');
     p.innerHTML = `Copyright &copy; ${year}. Todos os direitos reservados.`;
     footer.appendChild(p);
+    return p;
 };
 createCopyrightText();
+
 
 // CarouselScript
 

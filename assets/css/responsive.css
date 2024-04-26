@@ -1,0 +1,121 @@
+:root {
+    --primary-color: black;
+    --secondary-color: rgb(98, 0, 255);
+    --secondary-low-opacity-color: rgb(98, 0, 255,0.8);
+    --white-color:white;
+    --grey-color: #dbdbdb;
+  
+    --blue-color: #0084ff; 
+    --darkest-blue-color: #0084ff8d; 
+    
+  
+    --github-color: rgba(0, 0, 0, 0.8);
+    --github-low-opacity-color: rgba(0, 0, 0, 0.2);
+  
+    --instagram-color: rgba(255, 2, 132, 0.8);
+    --instagram-low-opacity-color: rgba(255, 2, 132, 0.2);
+  
+    --linkedin-color: rgba(0, 130, 251, 0.8);
+    --linkedin-low-opacity-color: rgba(0, 130, 251, 0.2);
+  }
+@media (max-width:1200px) {
+    header {
+        transition: transform 0.3s ease-in-out;
+    }
+
+    main {
+        margin-left: 0rem;
+        padding: 0;
+    }
+    footer{
+      margin-left: 27rem;
+    }
+
+    div.all-content{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    section.main-section {
+        width: 85rem;
+    }
+
+    .carousel-buttons {
+        margin-left: 1rem;
+    }
+
+    .carousel-buttons a {
+        padding: 1rem 2rem;
+        margin-top: 6rem;
+        font-size: 3rem;
+    }
+
+    section.main-screen h2 {
+        font-size: 3rem;
+    }
+
+    section.main-screen img {
+        height: 70vh;
+    }
+
+    section.main-screen ul {
+        font-size: 1.5rem;
+    }
+
+    section.main-screen ul li {
+        border-color: var(--primary-color) !important;
+        border-width: 10rem;
+        display: grid;
+        padding: 1rem
+    }
+
+    section#portifolio {
+        padding: 10rem 0;
+    }
+
+    .slider {
+        margin-left:30rem;
+        width: 40rem;
+        height: 20rem;
+        overflow: hidden;
+    }
+
+    .manual-navigation {
+        margin-top: -15rem;
+        margin-left: -20rem;
+    }
+
+    .navigation-auto {
+        margin-top: 25rem;
+        margin-left: -20rem;
+    }
+
+    .carousel-buttons {
+        margin-left: 10rem;
+        margin-top: -1rem;
+    }
+
+    .carousel-buttons a {
+        background-color: var(--blue-color);
+        color: white;
+        text-decoration: none;
+        padding: 2rem 4rem;
+        border-radius: 1rem;
+        margin-top: 2rem;
+        font-size: 3rem;
+    }
+
+    #toggle-menu-button {
+        color: var(--primary-color);
+        background-color: var(--darkest-blue-color);
+        border-radius: 4rem;
+        padding: 0.5rem 1.5rem;
+        font-size: 3rem;
+        cursor: pointer;
+        transition: transform 0.3s ease-in-out;
+        z-index: 5 !important;
+
+    }
+    
+    
+}
