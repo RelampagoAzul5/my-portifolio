@@ -33,7 +33,8 @@ html {
 body {
   background-color: var(--secondary-low-opacity-color);
   font-family: 'Roboto Slab', sans-serif;
-  max-width: 90%;
+  max-width: 12rem;
+  width: 90vw;
 }
 
 header {
@@ -51,12 +52,13 @@ footer {
 }
 
 main {
-  margin-left: 35rem;
+  margin-left: 38rem;
   padding: 2rem;
   max-width: 80rem;
   min-width: 20rem;
-  width: 100vh;
+  width: 50vh;
 }
+
 section.main-section{
   max-width: 145rem;
   min-width: 20rem;
@@ -111,7 +113,6 @@ section.main-screen {
 }
 
 section.main-screen section.about-me {
-  
   background-color: var(--primary-color);
   border-radius: 2rem;
   padding: 10vh 5vw;
@@ -122,7 +123,7 @@ section.main-screen img {
   object-position: top;
   min-height: 65rem;
   max-height: 90rem;
-  height: 125vh;
+  height: 70vh;
   border-radius: 2rem;
 }
 
@@ -223,10 +224,11 @@ section.main-screen ul li {
 }
 
 main section#contact-informations {
+  flex: 1;
   margin-top: 2rem;
   max-width: 134rem;
   min-width: 60rem;
-  width: 100vw;
+  width: 90vw;
   max-height: 70rem;
   min-height: 70rem;
   height: 80vh;
@@ -265,7 +267,6 @@ section#portifolio{
   background-color: var(--primary-color);
   border-radius: 3rem;
   margin-top: 2rem;
-  margin-right: 12rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -308,8 +309,8 @@ section#portifolio{
 
 .manual-navigation{
   position: absolute;
-  width: 80rem;
-  margin-top: -4rem;
+  width: 83rem; 
+  margin-top: -5rem;
   display: flex;
   justify-content: center;
 }
@@ -350,8 +351,8 @@ section#portifolio{
 
 .navigation-auto{
   position: absolute;
-  width: 80rem;
-  margin-top: 36rem;
+  width: 83rem;
+  margin-top: 35rem;
   display: flex;
   justify-content: center;
 }
@@ -377,7 +378,6 @@ section#portifolio{
   align-items: center;
   justify-content: center;
   margin-top: 6rem;
-  /* margin-left: 44.7rem; */
 }
 
 .carousel-buttons a{

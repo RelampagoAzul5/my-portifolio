@@ -1,36 +1,65 @@
 :root {
     --primary-color: black;
     --secondary-color: rgb(98, 0, 255);
-    --secondary-low-opacity-color: rgb(98, 0, 255,0.8);
-    --white-color:white;
+    --secondary-low-opacity-color: rgb(98, 0, 255, 0.8);
+    --white-color: white;
     --grey-color: #dbdbdb;
-  
-    --blue-color: #0084ff; 
-    --darkest-blue-color: #0084ff8d; 
-    
-  
+
+    --blue-color: #0084ff;
+    --darkest-blue-color: #0084ff8d;
+
+
     --github-color: rgba(0, 0, 0, 0.8);
     --github-low-opacity-color: rgba(0, 0, 0, 0.2);
-  
+
     --instagram-color: rgba(255, 2, 132, 0.8);
     --instagram-low-opacity-color: rgba(255, 2, 132, 0.2);
-  
+
     --linkedin-color: rgba(0, 130, 251, 0.8);
     --linkedin-low-opacity-color: rgba(0, 130, 251, 0.2);
-  }
-  @media (max-width:1600px) {
-      section.main-screen h2{
-          font-size: 4.5rem;
-      }
-      section.main-screen .about-me li{
+}
+
+@media (max-width:1750px) {
+    body{
+        max-width: fit-content;
+    }
+    main {
+        margin-left: 34rem;
+    }
+
+    section.main-screen section.about-me {
+        padding: 0 1rem;
+    }
+
+    section.main-screen h2 {
+        font-size: 4rem;
+    }
+
+    section.main-screen ul {
+        font-size: 1.5rem;
+    }
+
+    section.main-screen .about-me li {
         font-size: 2rem;
     }
-    
+
+    section.main-screen li {
+        padding: 0.5rem 2rem;
     }
-    @media (max-width:1200px) {
+
+}
+
+
+@media (max-width:1285px) {
+    main section#contact-informations h2 {
+        padding: 1rem;
+      }
+}
+@media (max-width:1200px) {
     main {
-        margin-left: 2rem;
+        margin-left: 1rem;
     }
+
     #toggle-menu-button {
         color: var(--primary-color);
         background-color: var(--darkest-blue-color);
@@ -38,5 +67,51 @@
         padding: 0.5rem 1.5rem;
         font-size: 3rem;
         cursor: pointer;
-    }  
+    }
+}
+
+@media (max-width:800px) {
+    main {
+        margin-left: 0rem;
+    }
+    main h1{
+        margin-left: 2rem;
+        font-size: 3rem;
+    }
+    .manual-navigation {
+        max-width: 82rem;
+        min-width: 63rem;
+        width: 100vw;
+    }
+
+    .navigation-auto {
+        max-width: 82rem;
+        min-width: 63rem;
+        width: 100vw;
+    }
+
+    div.all-content {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .about-me{
+        margin-top: 2rem;
+        /* margin-left: 13rem; */
+    }
+
+    section.main-screen {
+        width: 180%;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    section.main-screen img {
+        width: 30rem !important;
+        min-height:40rem;
+        height: 40rem;
+        margin-left: 6rem;
+    }
 }
