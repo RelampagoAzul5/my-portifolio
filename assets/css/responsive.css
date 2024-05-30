@@ -26,10 +26,12 @@
     main {
         margin-left: 34rem;
     }
-
+    
     section.main-screen section.about-me {
-        padding: 0 1rem;
+        padding: 4rem 0;
+
     }
+    
 
     section.main-screen h2 {
         font-size: 4rem;
@@ -50,16 +52,38 @@
 }
 
 
-@media (max-width:1285px) {
+@media (max-width:1315px) {
+    .about-me{
+        margin-top: 2rem;
+
+    }
+    
     main section#contact-informations h2 {
         padding: 1rem;
       }
 }
 @media (max-width:1200px) {
     main {
-        margin-left: 1rem;
+        margin-left: 0rem;
     }
-
+    section.main-screen img {
+    margin-right: 18rem;
+    width: 800px !important;
+    height: 100%;
+    }
+    section.main-screen {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    section.main-screen section.about-me {
+        margin-right: 18rem;
+        max-width: 133.5rem;
+        min-width: 80rem;
+        width: 90vw;
+    }
+    section.main-screen section.about-me ul{
+        margin-bottom: 4rem;
+    }
     #toggle-menu-button {
         color: var(--primary-color);
         background-color: var(--darkest-blue-color);
@@ -70,12 +94,11 @@
     }
 }
 
-@media (max-width:800px) {
+@media (max-width:1000px) {
     main {
         margin-left: 0rem;
     }
     main h1{
-        margin-left: 2rem;
         font-size: 3rem;
     }
     .manual-navigation {
@@ -96,22 +119,5 @@
         flex-direction: column;
         flex-wrap: wrap;
     }
-    .about-me{
-        margin-top: 2rem;
-        /* margin-left: 13rem; */
-    }
 
-    section.main-screen {
-        width: 180%;
-        justify-content: center;
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
-
-    section.main-screen img {
-        width: 30rem !important;
-        min-height:40rem;
-        height: 40rem;
-        margin-left: 6rem;
-    }
 }
