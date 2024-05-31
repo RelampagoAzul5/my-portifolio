@@ -85,12 +85,15 @@
         margin-bottom: 4rem;
     }
     #toggle-menu-button {
-        color: var(--primary-color);
-        background-color: var(--darkest-blue-color);
-        border-radius: 4rem;
-        padding: 0.5rem 1.5rem;
-        font-size: 3rem;
+        color: var(--white-color);
+        background-color: var(--primary-lou-opacity-color);
+        border-radius: 2rem;
+        padding: 2.5rem 3.5rem;
+        font-size: 4rem;
         cursor: pointer;
+        top: 2rem;
+        left: 0.5rem;
+        position: fixed;
     }
 }
 

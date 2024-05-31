@@ -1,5 +1,6 @@
 :root {
   --primary-color: black;
+  --primary-lou-opacity-color: rgb(0,0,0,0.6);
   --secondary-color: rgb(98, 0, 255);
   --secondary-low-opacity-color: rgb(98, 0, 255, 0.8);
   --white-color: white;

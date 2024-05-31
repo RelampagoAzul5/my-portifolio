@@ -41,7 +41,7 @@ function toggleMenu(){
             return
         }
         menu.style.display = 'none'
-        toggleMenuButton.style.left = '0rem'
+        toggleMenuButton.style.left = '0.5rem'
         toggleMenuButton.innerHTML = '≡';
     }
 }
