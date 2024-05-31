@@ -1,24 +1,3 @@
-:root {
-    --primary-color: black;
-    --secondary-color: rgb(98, 0, 255);
-    --secondary-low-opacity-color: rgb(98, 0, 255, 0.8);
-    --white-color: white;
-    --grey-color: #dbdbdb;
-
-    --blue-color: #0084ff;
-    --darkest-blue-color: #0084ff8d;
-
-
-    --github-color: rgba(0, 0, 0, 0.8);
-    --github-low-opacity-color: rgba(0, 0, 0, 0.2);
-
-    --instagram-color: rgba(255, 2, 132, 0.8);
-    --instagram-low-opacity-color: rgba(255, 2, 132, 0.2);
-
-    --linkedin-color: rgba(0, 130, 251, 0.8);
-    --linkedin-low-opacity-color: rgba(0, 130, 251, 0.2);
-}
-
 @media (max-width:1750px) {
     body{
         max-width: fit-content;
