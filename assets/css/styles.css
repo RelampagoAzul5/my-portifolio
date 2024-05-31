@@ -1,6 +1,6 @@
 :root {
   --primary-color: black;
-  --primary-lou-opacity-color: rgb(0,0,0,0.6);
+  --primary-lou-opacity-color: rgb(0, 0, 0, 0.6);
   --secondary-color: rgb(98, 0, 255);
   --secondary-low-opacity-color: rgb(98, 0, 255, 0.8);
   --white-color: white;
@@ -127,7 +127,23 @@ section.main-screen section.about-me {
   min-width: 40rem;
   max-width: 60rem;
   width: 100%;
+}
 
+.about-me {
+  margin: 20px;
+}
+
+.information,
+.formation {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.information li,
+.formation li {
+  flex: 1 1 50%;
+  box-sizing: border-box;
+  padding: 10px;
 }
 
 section.main-screen section.about-me ul {
@@ -142,7 +158,7 @@ section.main-screen section.about-me ul {
   margin-top: 4rem;
 }
 
-section#general-informations{
+section#general-informations {
   max-width: 133.5rem;
   min-width: 80rem;
   width: 90vw;
